@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-body {
+    @apply bg-dark-blue bg-mobile lg:bg-desktop bg-no-repeat bg-bottom md:bg-contain h-screen grid place-items-center ;
+}
+.tooltip{
+    @apply absolute md:top-[-40px] top-[120px] md:right-[20px] right-1/2 -translate-x-1/2;
+    background-color: #fff;
+    align-items:center;
+    width: fit-content;
+    z-index: 5;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+    padding: 15px 30px;
+}
+.tooltip::before{
+    @apply md:block hidden;
+    content: '';
+    position: absolute;
+    border-left: 30px #fff solid;
+    border-top: 30px #fff solid;
+    border-right: 30px transparent solid;
+    border-bottom: 30px transparent solid;
+    transform: rotate(-46deg);
+    top: 20px;
+    right: -30px;
+}
+.line {
+    @apply h-5 bg-dark-blue w-full absolute rounded-2xl flex items-center ;
+    padding-left: 2px;
+}
+
+.progress {
+    @apply rounded-2xl bg-gradient;
+    width: 60%;
+    height: 80%;
+    position: relative;
+}
+.progress::before{
+    content:'' ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 1px;
+}

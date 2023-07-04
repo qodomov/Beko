@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-body font-base-font">
+  <!-- Container uchun -->
+  <div class="xl:w-[1100px] lg:w-[992px] w-[90%]">
+    <!-- Flexbox Uchun  -->
+    <div class="flex gap-5 items-end flex-wrap">
+      <!-- Chap tomondagi quti -->
+      <div class="bg-light-blue p-8 md:p-10 w-full md:w-[40%] lg:w-[30%] rounded-2xl rounded-tr-[100px]">
+        <!-- chap tomondagi logotip -->
+        <img src="../images/logo.svg" alt="logo">
+        <div class="flex gap-5 mt-5">
+          <div class="bg-dark-blue p-3 w-12 h-12 rounded-md">
+            <img class="w-full h-full object-contain"  src="../images/icon-document.svg" alt="icon-document">
+          </div>
+          <div class="bg-dark-blue p-3 w-12 h-12 rounded-md">
+            <img  class="w-full h-full object-contain" src="../images/icon-folder.svg" alt="icon-folder">
+          </div>
+          <div class="bg-dark-blue p-3 w-12 h-12 rounded-md">
+            <img  class="w-full h-full object-contain" src="../images/icon-upload.svg" alt="icon-upload">
+          </div>
+
+        </div>
+      </div>
+      <!-- O'ng tomondagi quti -->
+      <div class="bg-light-blue w-full md:w-[50%] flex-grow lg:w-[67%] p-8 md:p-10 relative rounded-xl">
+        <h1 class="text-gray-blue text:sm md:text-base lg:text-xl">You’ve used <span class="text-white font-medium">815 GB</span> of your storage</h1>
+        <!-- Tooltip -->
+        <div class="tooltip rounded-xl">
+         <h2 class="text-3xl font-bold text-dark-blue"> 185</h2> 
+          <p class="uppercase whitespace-nowrap text-gray-blue font-semibold">GB Left</p>
+        </div>
+
+        <!-- Line progress -->
+        <div class="relative flex justify-between">
+          <div class="line">
+            <div class="progress"></div>
+          </div>
+          <div class="flex text-white font-medium mt-5 justify-between w-full ">
+            <p> <span class="text-xl" >0</span> GB</p>
+            <p> <span class="text-xl" >1000</span> GB</p>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </div>
+
+</body>
+</html>
